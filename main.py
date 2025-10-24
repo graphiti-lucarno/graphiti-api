@@ -35,11 +35,11 @@ async def startup():
                 ON n.embedding
                 OPTIONS {indexConfig: {
                     `vector.dimensions`: 768,
-                    `vector.similarity_function`: 'cosine'
-                }}
+                    `vector.similarity_function`: 'cosin'e
+                                    }'
             """)
             print("✓ Vector index created successfully")
-        driver.close()
+        driver.close()ose()
     except Exception as e:
         print(f"Warning: Could not create vector index: {e}"))
 
