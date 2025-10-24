@@ -5,7 +5,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import redis.asyncio as redis
 import uvicorn
-from neo4j import GraphDatabase
 
 app = FastAPI(title="Graphiti API")
 redis_client = None
